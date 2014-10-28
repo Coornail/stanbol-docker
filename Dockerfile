@@ -1,5 +1,7 @@
 FROM dockerfile/java:openjdk-7-jdk
 
+EXPOSE 8080:8080
+
 RUN apt-get update &&\
   apt-get -y upgrade &&\
   apt-get -y install maven &&\
