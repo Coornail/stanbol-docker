@@ -1,4 +1,4 @@
-FROM dockerfile/java
+FROM dockerfile/java:openjdk-7-jdk
 
 RUN apt-get update &&\
   apt-get -y upgrade &&\
