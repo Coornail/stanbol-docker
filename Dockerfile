@@ -10,6 +10,6 @@ RUN wget http://apache.rediris.es/stanbol/apache-stanbol-0.12.0-source-release.z
   rm *.zip &&\
   mv apache*/* .
 
-RUN mvn clean install
+RUN mvn clean install -Dmaven.test.skip=true
 
 CMD ["/bin/bash"]
